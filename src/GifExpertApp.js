@@ -12,7 +12,7 @@ export const GifExpertApp = () => {
 
       <hr />
 
-      <ol>
+      <div>
         { 
           categories.map(categoria => (
             <GifGrid 
@@ -21,7 +21,7 @@ export const GifExpertApp = () => {
             />
           ))
         }
-      </ol>
+      </div>
     </>
   );
 };

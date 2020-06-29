@@ -6,10 +6,10 @@ export const GifGrid = ({ category }) => {
   // custom hook es el que tiene la logica y el estado.
   // De esta forma el código del componente queda mas prolijo.
   const { data: images, loading} = useFetchGifs({ category  });
-
+  
   return(
-    <>
-      <h3>{ category }</h3>
+    <>      
+      { !loading &&  <h3>{ category }</h3> }  
       { loading && 'Loading....' }  
       <div className="card-grid">
           { 

@@ -5,10 +5,11 @@ export const GifGridItem = ({ id, title, url }) => {
   return(
     <div className="card">
       <img 
+        className="card-img-top"
         src={url}
         alt={title}
       />
-      <p>{title}</p>
+      <p className="card-text">{title}</p>
     </div>
   )
 };
